@@ -1,8 +1,10 @@
 terraform {
   backend "s3" {
-    bucket         = "chi-my-terraform-state"
+    bucket         = "chi-my-tf-website-state"
     key            = "global/s3/terraform.tfstate"
-    region         = "eu-west-2"
-    dynamodb_table = "terraform-lock-file"
+    region         = "us-east-2"
+    dynamodb_table = "chi-db-website-table"
   }
 }
+
+
